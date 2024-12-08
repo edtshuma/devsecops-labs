@@ -42,4 +42,5 @@ jobs:
      # Task for testing with pytest
     - name: Test with pytest
       run: |
-        pytest
+        pytest -v --junitxml=docs/unit-tests/coverage.xml --cov-report xml --cov app.main
+
